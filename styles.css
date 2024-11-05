@@ -1,0 +1,73 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+section {
+    padding: 2em;
+    margin-top: 1em;
+}
+
+#home, #about, #skills, #projects, #contact {
+    min-height: 100vh;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    section {
+        padding: 1em;
+    }
+}
